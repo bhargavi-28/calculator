@@ -1,0 +1,98 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}.container{
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  /* background-color: rgb(225, 182, 65); */
+  
+}
+body{
+  font-family: 'Quicksand', sans-serif;
+  font-size: 16px;
+  
+  
+}
+
+
+
+.container .calculator {
+  background-color:rgb(87, 70, 70) ;
+  width:260px;
+  border-radius: 10px;
+  height: 500px;
+  overflow: hidden;
+  position:fixed;
+}
+
+.container .calculator .input-field{
+  height: 40px;
+  background-color: rgb(26, 26, 26);
+  color: #fff;
+  padding: 10px;
+  text-align: right;
+  font-weight:400;
+
+}
+.container .calculator .numpers{
+  display: grid;
+  grid-template-columns:23% 23% 23% 23%;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  margin-top: 5px;
+
+}
+
+.container .calculator h1{
+  color: #fff;
+  text-align:right;
+  padding: 10px;
+font-size: 35px;
+margin-top: 75px;
+
+}
+
+.container .calculator .numpers button {
+  height: 60px;
+  width: 60px;
+  background-color: rgb(39, 39, 39);
+  outline: none;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.container .calculator .numpers button:last-child{
+  width: 130px;
+  background-color: rgb(225, 65, 180) ;
+}
+.container .calculator .numpers button:hover{
+  opacity: 80%;
+  transition: all 100ms;
+}
+
+ion-icon {
+  font-size: 25px;
+  font-weight:bold;
+}
+
+.container .calculator .numpers button#clear,
+.container .calculator .numpers button#back-space,
+.container .calculator .numpers button#dot,
+.container .calculator .numpers button#multi{
+  background-color: rgb(26, 26, 26);
+}
+
+.container .calculator .numpers button#slash,
+.container .calculator .numpers button#minus,
+.container .calculator .numpers button#plus {
+  background-color: rgb(26, 26, 26);
+  color:  rgb(225, 182, 65) ;
+  
+}
+
